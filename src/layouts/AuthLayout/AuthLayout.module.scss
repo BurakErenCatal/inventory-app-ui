@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 2rem 0rem 2rem;
+  height: calc(100vh - 8rem);
+}

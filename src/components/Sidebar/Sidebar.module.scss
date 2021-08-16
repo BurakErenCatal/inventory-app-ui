@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.container {
+    position: fixed;
+    left: 0;
+    top: 6rem;
+    height: calc(100vh - 6rem);
+    background-color: $white;
+    padding: 2rem 0rem;
+    border: 1px solid $gray-40;
+    width: 16rem;
+    .content{
+        display: flex;
+        flex-direction: column;
+        .menuItem{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            padding: 0.5rem 3rem;
+            text-decoration: none;
+            color: $gray-90;
+            &:hover{
+                color: $primary;
+            }
+            &.active{
+                background-color: $hl-20;
+                color: $primary;
+            }
+        }
+    }
+}

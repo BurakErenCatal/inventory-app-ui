@@ -1,0 +1,52 @@
+@import "../../styles//variables";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0rem;
+  .backButton {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    outline: none;
+    background-color: $primary;
+    color: white;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    &.disabled {
+      cursor: not-allowed;
+      background-color: $gray-20;
+    }
+  }
+  .pageList {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    background-color: $gray-20;
+    overflow: hidden;
+    .pageNo {
+      color: $gray-60;
+      cursor: pointer;
+      font-size: 22px;
+      padding: 0.5rem;
+      &.active {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+  .nextButton {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: $primary;
+    color: white;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    &.disabled {
+      cursor: not-allowed;
+      background-color: $gray-20;
+    }
+  }
+}

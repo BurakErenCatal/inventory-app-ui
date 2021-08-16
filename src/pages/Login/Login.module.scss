@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.container {
+  padding: 1rem;
+  background-color: $white;
+  border: 1px solid $gray-20;
+  min-width: 24rem;
+  .form {
+    .generalError {
+      padding: 0.5rem;
+      background-color: rgba(256, 0, 0, 0.2);
+      color: red;
+      width: 100%;
+      margin: 1rem 0rem;
+      font-size: 14px;
+    }
+    .inputGroup {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      label {
+        font-size: 14px;
+        color: $gray-90;
+        margin-bottom: 0.5rem;
+      }
+      input {
+        font-size: 16px;
+        height: 2rem;
+        border-radius: 0.5rem;
+        border: 1px solid $primary;
+        background-color: $hl-10;
+        color: $sh-90;
+        padding: 0.25rem 1rem;
+        outline: none;
+      }
+      span {
+        font-size: 14px;
+        margin-top: 0.25rem;
+        color: red;
+      }
+    }
+    button {
+      cursor: pointer;
+      width: 180px;
+      height: 2rem;
+      border: none;
+      color: $white;
+      background-color: $primary;
+      border-radius: 0.75rem;
+      &:hover {
+        background-color: $hl-60;
+      }
+    }
+  }
+}
