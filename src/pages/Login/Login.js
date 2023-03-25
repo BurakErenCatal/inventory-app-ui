@@ -51,7 +51,7 @@ const Login = () => {
           history.push("/");
         }
       } catch (err) {
-        setFormErrors({ ...formErrors, general: err.response.data.message });
+        setFormErrors({ ...formErrors, general: err.response?.data.message });
       }
     }
   };
@@ -63,7 +63,7 @@ const Login = () => {
           <div className={s.generalError}>
             <span>{formErrors.general}</span>
           </div>
-        )}
+        )} 
         <div className={s.inputGroup}>
           <label>Kullanıcı Adı</label>
           <input type="text" name="username" onChange={handleChange} />
